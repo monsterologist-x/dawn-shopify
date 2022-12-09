@@ -1,0 +1,27 @@
+# we use Shopify as our ecommerce platform
+{%- comment -%}
+# Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
+{% endcomment %}
+{% for group in robots.default_groups %}
+  {{- group.user_agent -}}
+
+  {% for rule in group.rules %}
+    {{- rule -}}
+  {% endfor %}
+
+{%- comment -%}
+# #custom_code: disallow collections/tags, collections/all, blog tags, search queries, Kickstarter rewards
+{% endcomment %}
+  {%- if group.user_agent.value == '*' -%}
+{{ 'Disallow: /collections/*/*' }}
+{{ 'Disallow: /collections/all*' }}
+{{ 'Disallow: /*?q=*' }}
+{{ 'Disallow: /blogs/*/tagged/*' }}
+{{ 'Disallow: /collections/kickstarter*' }}
+{{ 'Disallow: /products/kickstarter*' }}
+  {%- endif -%}
+
+  {%- if group.sitemap != blank -%}
+    {{ group.sitemap }}
+  {%- endif -%}
+{% endfor %}

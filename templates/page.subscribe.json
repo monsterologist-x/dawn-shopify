@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1640224662d837b56e": {
+      "type": "newsletter",
+      "blocks": {
+        "1640224662dd2cbde9-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "1640224662dd2cbde9-1": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "1640224662dd2cbde9-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1640224662dd2cbde9-0",
+        "1640224662dd2cbde9-1",
+        "1640224662dd2cbde9-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1640224662d837b56e"
+  ]
+}

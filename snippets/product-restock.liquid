@@ -1,0 +1,23 @@
+        {%- assign out_of_stock = false -%}
+			{%- for variant in product.variants -%}
+			  {%- if variant.inventory_quantity <= 0 and product.vendor == 'Monsterologist' and product.type != 'Gift Card' -%}
+			    {%- assign out_of_stock = true -%}
+			  {%- endif -%}
+			{%- endfor -%}
+        {%- assign variant_incoming = false -%}
+			{%- for variant in product.variants -%}
+			  {%- if variant.incoming == true -%}
+			    {%- assign variant_incoming = true -%}
+			    {%- assign variant_incoming_date = variant.next_incoming_date | date: "%b %d, %Y" -%}
+			  {%- endif -%}
+			{%- endfor -%}
+		{%- comment -%}
+		{%- if out_of_stock == true and product.tags contains '_restock'-%}
+		  	<p>The out-of-stock variations for this design are likely being restocked, <a href="/pages/contact-me">drop me a line to be notified when they are available again.</a> Please indicate the item in the contact form message.</p>
+		{%- endif -%}
+		{%- endcomment -%}
+		{%- if out_of_stock == true and variant_incoming == true -%}
+        <p>Out-of-stock variants due to be restocked on {{ variant_incoming_date }}</p>
+		{%- elsif out_of_stock == true and variant_incoming != true -%}
+		  	<p><a href="/pages/contact-me">Contact me</a> to request a restock of this item.</p>
+		{%- endif -%}
