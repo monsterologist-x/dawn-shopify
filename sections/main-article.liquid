@@ -15,16 +15,17 @@
               {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
             >
               <img
-                srcset="{% if article.image.width >= 350 %}{{ article.image | img_url: '350x' }} 350w,{% endif %}
-                  {% if article.image.width >= 750 %}{{ article.image | img_url: '750x' }} 750w,{% endif %}
-                  {% if article.image.width >= 1100 %}{{ article.image | img_url: '1100x' }} 1100w,{% endif %}
-                  {% if article.image.width >= 1500 %}{{ article.image | img_url: '1500x' }} 1500w,{% endif %}
-                  {% if article.image.width >= 2200 %}{{ article.image | img_url: '2200x' }} 2200w,{% endif %}
-                  {% if article.image.width >= 3000 %}{{ article.image | img_url: '3000x' }} 3000w,{% endif %}
-                  {{ article.image | img_url: 'master' }} {{ article.image.width }}w"
+                srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                  {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                  {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                  {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                  {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                  {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                  {{ article.image | image_url }} {{ article.image.width }}w"
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ article.image | img_url: '1100x' }}"
-                loading="lazy"
+                src="{{ article.image | image_url: width: 1100 }}"
+                loading="eager"
+                fetchpriority="high"
                 width="{{ article.image.width }}"
                 height="{{ article.image.height }}"
                 alt="{{ article.image.alt | escape }}">
@@ -52,48 +53,17 @@
 
         {%- when 'share' -%}
           <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
-            <share-button class="share-button" {{ block.shopify_attributes }}>
-              <button class="share-button__button hidden">
-                {% render 'icon-share' %}
-                {{ block.settings.share_label | escape }}
-              </button>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary class="share-button__button">
-                  {% render 'icon-share' %}
-                  {{ block.settings.share_label | escape }}
-                </summary>
-                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                  <div class="field">
-                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                    </span>
-                    <input type="text"
-                          class="field__input"
-                          id="url"
-                          value="{{ shop.url | append: article.url }}"
-                          placeholder="{{ 'general.share.share_url' | t }}"
-                          onclick="this.select();"
-                          readonly
-                    >
-                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                  </div>
-                  <button class="share-button__close hidden no-js-hidden">
-                    {% render 'icon-close' %}
-                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                  </button>
-                  <button class="share-button__copy no-js-hidden">
-                    {% render 'icon-clipboard' %}
-                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                  </button>
-                </div>
-              </details>
-            </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            {% assign share_url = request.origin | append: article.url %}
+            {% render 'share-button',
+              block: block,
+              share_link: share_url
+            %}
           </div>
     {%- endcase -%}
   {%- endfor -%}
 
-  <div class="element-margin center">
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}">
+  <div class="article-template__back element-margin-top center">
+    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
     </a>
@@ -175,6 +145,7 @@
                   autocomplete="name"
                   value="{{ form.author }}"
                   aria-required="true"
+                  required
                   {% if form.errors contains 'author' %}
                     aria-invalid="true"
                     aria-describedby="CommentForm-author-error"
@@ -199,6 +170,7 @@
                   autocorrect="off"
                   autocapitalize="off"
                   aria-required="true"
+                  required
                   {% if form.errors contains 'email' %}
                     aria-invalid="true"
                     aria-describedby="CommentForm-email-error"
@@ -220,6 +192,7 @@
                 id="CommentForm-body"
                 class="text-area field__input"
                 aria-required="true"
+                required
                 {% if form.errors contains 'body' %}
                   aria-invalid="true"
                   aria-describedby="CommentForm-body-error"
@@ -251,16 +224,15 @@
     "articleBody": {{ article.content | strip_html | json }},
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": {{ shop.url | append: page.url | json }}
+      "@id": {{ request.origin | append: page.url | json }}
     },
     "headline": {{ article.title | json }},
     {% if article.excerpt != blank %}
       "description": {{ article.excerpt | strip_html | json }},
     {% endif %}
     {% if article.image %}
-      {% assign image_size = article.image.width | append: 'x' %}
       "image": [
-        {{ article | img_url: image_size | prepend: "https:" | json }}
+        {{ article | image_url: width: 1920 | prepend: "https:" | json }}
       ],
     {% endif %}
     "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
@@ -271,15 +243,6 @@
     },
     "publisher": {
       "@type": "Organization",
-      {% if settings.share_image %}
-        {% assign image_size = settings.share_image.width | append: 'x' %}
-        "logo": {
-          "@type": "ImageObject",
-          "height": {{ settings.share_image.height | json }},
-          "url": {{ settings.share_image | img_url: image_size | prepend: "https:" | json }},
-          "width": {{ settings.share_image.width | json }}
-        },
-      {% endif %}
       "name": {{ shop.name | json }}
     }
   }
@@ -290,6 +253,7 @@
 {
   "name": "t:sections.main-article.name",
   "tag": "section",
+  "class": "section",
   "blocks": [
     {
       "type": "@app"
