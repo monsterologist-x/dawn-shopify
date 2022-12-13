@@ -7,7 +7,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-patches-home-page-2.jpg",
-						"title": "Embroidered Patches",
+            "title": "Embroidered Patches",
             "text": "<p><a href=\"\/collections\/embroidered-patches\" title=\"Embroidered Patches\">Cryptozoology, supernatural & paranormal embroidered patches<\/a> developed with the utmost of monster-focused care. All <a href=\"\/collections\/morale-patches\" title=\"Morale Patches\">morale patches<\/a> available with hook-and-loop. <\/p>",
             "link_label": "Shop for patches!",
             "link": "shopify:\/\/collections\/embroidered-patches"
@@ -17,7 +17,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-stickers-home-page-2.jpg",
-						"title": "Stickers",
+            "title": "Stickers",
             "text": "<p>Durable and weatherproof <a href=\"\/collections\/stickers\" title=\"Stickers\">vinyl stickers featuring your favorite cryptozoology, Halloween and monster characters<\/a>.<\/p>",
             "link_label": "Shop for stickers!",
             "link": "shopify:\/\/collections\/stickers"
@@ -27,7 +27,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-buttons-home-page-2.jpg",
-						"title": "Pin-Back Buttons",
+            "title": "Pin-Back Buttons",
             "text": "<p><a href=\"\/collections\/buttons\" title=\"Buttons\">Monster, creature and cryptid buttons<\/a>. Featuring Bigfoot, Nessie, UFOs & aliens, Mothman, Halloween & Krampus.<\/p>",
             "link_label": "Shop for pin-back buttons!",
             "link": "shopify:\/\/collections\/buttons"
@@ -37,7 +37,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-prints-home-page-1280x1280.jpg",
-						"title": "Prints",
+            "title": "Prints",
             "text": "<p>High-quality art prints featuring your favorite cryptids, monsters, mysterious places, and some original creeps as well. <\/p>",
             "link_label": "Shop for prints!",
             "link": "shopify:\/\/collections\/prints"
