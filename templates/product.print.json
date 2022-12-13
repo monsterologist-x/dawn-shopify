@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "761b07a9-9617-445d-98a5-2983982bab25": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#80298f",
+            "star_size": 18,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1406ba09-76ee-4890-8028-b3415c7aaecb": {
+          "type": "text",
+          "settings": {
+            "text": "Get 15% off 3 or more prints with code PRINTS15OFF3 and 25% off 5 or more prints with code PRINTS25OFF5",
+            "text_style": "body"
+          }
+        },
+        "1c3db841-1b3c-4622-b8aa-ce5a90beca47": {
+          "type": "text",
+          "settings": {
+            "text": "Some prints have a 2-5 business day production time. Shipping time is additional, and typically 3-5 business days.",
+            "text_style": "body"
+          }
+        },
+        "b0d86cd7-b24f-4a8c-a3c4-ee6c06212c48": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-restock' %}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "eb861c6a-f570-4192-8d0f-3be500d31fb5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Special Print Shipping Info",
+            "content": "<p>Prints are shipped separately from other items in your order, and therefore have a separate shipping charge.<\/p><p>Prints also have a <strong>flat rate shipping fee<\/strong> — one shipping fee no matter how many you order!<\/p>",
+            "page": "",
+            "icon": "truck"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "68c1bebb-bcb4-49e1-95be-9638bac39edb": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        },
+        "6b507f2d-f906-44b2-bb87-7cd26f87a401": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'dynamic-links' -%}"
+          }
+        },
+        "42465bb8-9807-4b53-b96c-562249a4dcda": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'related-products' -%}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "761b07a9-9617-445d-98a5-2983982bab25",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "1406ba09-76ee-4890-8028-b3415c7aaecb",
+        "1c3db841-1b3c-4622-b8aa-ce5a90beca47",
+        "b0d86cd7-b24f-4a8c-a3c4-ee6c06212c48",
+        "buy_buttons",
+        "description",
+        "eb861c6a-f570-4192-8d0f-3be500d31fb5",
+        "share",
+        "68c1bebb-bcb4-49e1-95be-9638bac39edb",
+        "6b507f2d-f906-44b2-bb87-7cd26f87a401",
+        "42465bb8-9807-4b53-b96c-562249a4dcda"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

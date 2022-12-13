@@ -1,0 +1,171 @@
+{
+  "current": {
+    "colors_solid_button_labels": "#fff100",
+    "colors_accent_1": "#80298f",
+    "colors_accent_2": "#e22120",
+    "colors_text": "#1d1d1d",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#ffffff",
+    "colors_background_2": "#fff663",
+    "type_header_font": "montserrat_n8",
+    "type_body_font": "montserrat_n5",
+    "sold_out_badge_color_scheme": "inverse",
+    "accent_icons": "accent-1",
+    "social_twitter_link": "https:\/\/twitter.com\/monsterologist_",
+    "social_facebook_link": "https:\/\/facebook.com\/Monsterologist",
+    "social_pinterest_link": "https:\/\/pinterest.com\/monsterologist_\/",
+    "social_instagram_link": "https:\/\/instagram.com\/monsterologist_",
+    "checkout_logo_size": "small",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "10% off studio item orders over $75! Use code 10OFF75 at checkout.",
+              "color_scheme": "inverse",
+              "link": "shopify:\/\/pages\/promotions"
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "accent-1",
+          "logo": "shopify:\/\/shop_images\/Monsterologist-Shopify-banner-1400x850.png",
+          "logo_width": 190,
+          "logo_position": "middle-left",
+          "menu": "main-menu-compact",
+          "show_line_separator": true,
+          "enable_sticky_header": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "6774bb0b-85ca-4ae2-a4c6-5d04ea842e38": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer-menu-2"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "bc91ed1a-fb33-4651-a921-f9a8f6e8856e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Monsterologist-Shopify-banner-1400x850.png",
+              "image_width": 200,
+              "alignment": "center"
+            }
+          },
+          "footer-1": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "6774bb0b-85ca-4ae2-a4c6-5d04ea842e38",
+          "footer-0",
+          "bc91ed1a-fb33-4651-a921-f9a8f6e8856e",
+          "footer-1"
+        ],
+        "settings": {
+          "color_scheme": "accent-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
+        }
+      }
+    },
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "menu": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ],
+          "settings": {
+            "color_scheme": "accent-1"
+          }
+        }
+      }
+    }
+  }
+}

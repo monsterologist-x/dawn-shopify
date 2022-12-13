@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "2020da87-e005-4e28-b486-240cbd2be1da": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#80298f",
+            "star_size": 18,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "91818ddb-cf06-4b68-b1ab-6b0e4813b5c4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What is \"hook-and-loop\" backing?",
+            "content": "<p>\"Hook-and-loop\" backed patches have the \"hook\" side of the fastener material sewn on the back, and are compatible with any loop materials (such as the brand name Velcro) that accept hook fasteners.<\/p>",
+            "page": "",
+            "icon": "question_mark"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "9acadce6-d1d9-45ae-906f-14101f328da4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-restock' %}"
+          }
+        },
+        "c26f6e56-41ee-4ddd-b324-6d584a343669": {
+          "type": "shopify:\/\/apps\/back-in-stock-notifier\/blocks\/back_in_stock_notifier\/1fadf77e-ebd8-4e68-90cb-f24d97d07bde",
+          "settings": {
+            "show_bis_app_widget": true,
+            "notify_btn_text": "NOTIFY ME WHEN IN STOCK",
+            "notify_btn_backColor": "{{ shop.brand.colors.primary[0].background }}",
+            "notify_btn_textColor": "{{ shop.brand.colors.primary[0].foreground }}",
+            "notify_btn_borderColor": "#000000",
+            "notify_btn_border_radius": 2,
+            "notify_btn_border_size": 1,
+            "notify_btn_position_desktop": "other",
+            "notify_btn_position_mobile": "other"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "80fda808-fee7-4f85-afb2-c687ea63d888": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "• {{ product.metafields.dimensions.width | metafield_text }} W x {{ product.metafields.dimensions.length | metafield_text }} L",
+            "text_style": "subtitle"
+          }
+        },
+        "dbb63f47-d8ad-42e5-a41d-483f0242dbd5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Details (click to expand)",
+            "content": "<p>• {{ product.metafields.dimensions.width | metafield_tag }} W x {{ product.metafields.dimensions.length | metafield_tag }} L<\/p><p>• 100% embroidered<\/p><p>• available with iron-on or hook-and-loop backing<\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "f3634f90-c7cc-4f05-a6a3-202d0a8de36f": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'dynamic-links' -%}"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "8fffa4f5-b8f0-4571-9e1c-29b348139ab7": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        },
+        "ff606414-0d3b-4396-8498-b329ecfda3f3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'related-products' -%}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "2020da87-e005-4e28-b486-240cbd2be1da",
+        "price",
+        "variant_picker",
+        "91818ddb-cf06-4b68-b1ab-6b0e4813b5c4",
+        "quantity_selector",
+        "9acadce6-d1d9-45ae-906f-14101f328da4",
+        "c26f6e56-41ee-4ddd-b324-6d584a343669",
+        "buy_buttons",
+        "80fda808-fee7-4f85-afb2-c687ea63d888",
+        "dbb63f47-d8ad-42e5-a41d-483f0242dbd5",
+        "description",
+        "f3634f90-c7cc-4f05-a6a3-202d0a8de36f",
+        "share",
+        "8fffa4f5-b8f0-4571-9e1c-29b348139ab7",
+        "ff606414-0d3b-4396-8498-b329ecfda3f3"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

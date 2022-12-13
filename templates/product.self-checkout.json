@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "e69b8dbc-bb86-4d6e-80c2-95e73f5ab5de": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% render 'restock' %}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "868a39ce-c4bc-4234-9a0f-3fd9f5d9b09c": {
+          "type": "text",
+          "settings": {
+            "text": "Pick a fixed amount above, or choose $1 and enter the total sale amount below as a quantity:",
+            "text_style": "subtitle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "ebecf611-6220-4427-87d4-5cf20e73256c": {
+          "type": "text",
+          "settings": {
+            "text": "(Tap the number field to enter exact digits)",
+            "text_style": "body"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "6263b0aa-dac6-45ba-8e5d-54a93f2d4703": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% if product.type == \"Patch\" %}\n\t{% capture pluralType %}{{ product.type | append: 'es' | downcase }}{% endcapture %}\n{% elsif product.type != \"Patch\" %}\n\t{% capture pluralType %}{{ product.type | append: 's' | downcase }}{% endcapture %}\n{% endif %}\n\n{%- if product.type == \"Patch\" and product.metafields.sort.set == \"Paranormal Places\" -%}\n\t{% capture productType %}{{ product.type | prepend: 'travel ' | append: 'es' | downcase }}{% endcapture %}\n\t{%- elsif product.type == \"Sticker\" and product.metafields.sort.set == \"Paranormal Places\" -%}\n\t\t{% capture productType %}{{ product.type | prepend: 'travel ' | append: 's' | downcase }}{% endcapture %}\n{%- else -%}\n{% assign productType = pluralType %}\n{% endif %}\n\n<div>\n{%- if product.metafields.sort.set != blank -%}\n<p>\nPart of the <a href=\"\/collections\/{{product.metafields.sort.set | handleize}}\" title=\"{{product.metafields.sort.set}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.set}}<\/a> series. \n\nSee more <a href=\"\/collections\/{{product.metafields.sort.set | handleize}}-{{ productType | handleize }}\" title=\"{{product.metafields.sort.set}} {{ productType }}\">\n{{product.metafields.sort.set}} {{ productType }}<\/a>.\n\n<\/p>\n{%- endif -%}\n<p>\n{%- if product.metafields.sort.creature != blank and product.metafields.sort.creature == \"Bigfoot\" or product.metafields.sort.creature == \"Mothman\" or product.metafields.sort.creature == \"Alien & UFO\" or product.metafields.sort.creature == \"Cthulhu\" or product.metafields.sort.creature == \"Krampus\" -%}\nBe sure to check out the other <a href=\"\/collections\/{{product.metafields.sort.creature | handleize}}-{{ pluralType }}\" title=\"{{product.metafields.sort.creature}} \n{{ pluralType }}\">\n{{product.metafields.sort.creature}} {{ pluralType }}<\/a>, and all the <a href=\"\/collections\/{{product.metafields.sort.creature | handleize}}\" title=\"{{product.metafields.sort.creature | handleize}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.creature}} items<\/a>.\n{%- else -%}\n{% comment %} This isn't required (I think) because dynamic patch links go to metafieldTheme\/product-typeTag links (\"\/cryptozoology\/patch\")\n{% if product.type == \"Patch\" %}\n\t{% capture productType %}{{ product.type | prepend: 'embroidered-' | append: 'es' | downcase }}{% endcapture %}\n{% else %}\n{% assign productType = pluralType %}\n{%- endif -%}\n{% endcomment %}\n{%- if product.metafields.sort.creature != blank -%}\nBe sure to check out the other <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}-{{ pluralType }}\/{{product.metafields.sort.creature | handleize}}\" title=\"{{product.metafields.sort.creature}} \n{{ pluralType }}\">\n{{product.metafields.sort.creature}} {{ pluralType }}<\/a>, and all the <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}\/{{product.metafields.sort.creature | handleize}}\" title=\"{{product.metafields.sort.creature}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.creature}} items<\/a>.\n{%- endif -%}\n<\/p>\n{%- endif -%}\n{%- if product.metafields.sort.theme != blank -%}\n<p>More: all the <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}-{{ pluralType }}\" title=\"{{product.metafields.sort.theme}} \n{{ pluralType }}\">\n{{product.metafields.sort.theme}} {{ pluralType }}<\/a> and <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}\" title=\"{{product.metafields.sort.theme}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.theme}} items<\/a>, and all the {{shop.name}}<a href=\"\/collections\/{{ pluralType }}\" title=\"all {{shop.name}} {{ pluralType }}\">\n{{ pluralType }}<\/a>.\n<\/p>\n{%- endif -%}\n<\/ div>"
+          }
+        },
+        "40aa5478-8b26-48ae-8744-2199a1e711af": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% if product.type == \"Patch\" %}\n\t{% capture pluralType %}{{ product.type | append: 'es' | downcase }}{% endcapture %}\n{% elsif product.type != \"Patch\" %}\n\t{% capture pluralType %}{{ product.type | append: 's' | downcase }}{% endcapture %}\n{% endif %}\n\n{%- if product.type == \"Patch\" and product.metafields.sort.set == \"Paranormal Places\" -%}\n\t{% capture productType %}{{ product.type | prepend: 'travel ' | append: 'es' | downcase }}{% endcapture %}\n\t{%- elsif product.type == \"Sticker\" and product.metafields.sort.set == \"Paranormal Places\" -%}\n\t\t{% capture productType %}{{ product.type | prepend: 'travel ' | append: 's' | downcase }}{% endcapture %}\n{%- else -%}\n{% assign productType = pluralType %}\n{% endif %}\n\n<div>\n{%- if product.metafields.sort.set != blank -%}\n<p>\nPart of the <a href=\"\/collections\/{{product.metafields.sort.set | handleize}}\" title=\"{{product.metafields.sort.set}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.set}}<\/a> series.\n{% unless product.tags contains '_misc' %}\nSee more <a href=\"\/collections\/{{product.metafields.sort.set | handleize}}-{{ productType | handleize }}\" title=\"{{product.metafields.sort.set}} {{ productType }}\">\n{{product.metafields.sort.set}} {{ productType }}<\/a>.\n{% endunless %}\n<\/p>\n{%- endif -%}\n<p>\n{%- if product.tags contains '_main_collection' and product.metafields.sort.creature != blank -%}\n{%- if product.type == \"Patch\" or product.type == \"Sticker\" -%}\nBe sure to check out the other <a href=\"\/collections\/{{product.metafields.sort.creature | handleize}}-{{ pluralType }}\" title=\"{{product.metafields.sort.creature}}\n{{ pluralType }}\">\n{%- else -%}\nBe sure to check out the other <a href=\"\/collections\/{{product.metafields.sort.creature | handleize}}?filter.p.product_type={{product.type | url_encode }}\" title=\"{{product.metafields.sort.creature}}\n{{ pluralType }}\">\n{%- endif -%}\n{{product.metafields.sort.creature}} {{ pluralType }}<\/a>, and all the <a href=\"\/collections\/{{product.metafields.sort.creature | handleize}}\" title=\"{{product.metafields.sort.creature | handleize}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.creature}} items<\/a>.\n{%- else -%}\n{% comment %} This isn't required (I think) because dynamic patch links go to metafieldTheme\/product-typeTag links (\"\/cryptozoology\/patch\")\n{% if product.type == \"Patch\" %}\n\t{% capture productType %}{{ product.type | prepend: 'embroidered-' | append: 'es' | downcase }}{% endcapture %}\n{% else %}\n{% assign productType = pluralType %}\n{%- endif -%}\n{% endcomment %}\n{%- if product.metafields.sort.creature != blank -%}\nYou must check out all the other <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}?filter.p.m.sort.creature={{product.metafields.sort.creature | url_encode }}\" title=\"{{product.metafields.sort.creature}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.creature}} items<\/a>.\n{%- endif -%}\n<\/p>\n{%- endif -%}\n\n{%- if product.metafields.sort.theme != product.metafields.sort.creature -%}\n{%- if product.metafields.sort.theme != blank and product.type == \"Patch\" or product.type == \"Sticker\" -%}\n<p>More: all the <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}-{{ pluralType }}\" title=\"{{product.metafields.sort.theme}}\n{{ pluralType }}\">{{product.metafields.sort.theme}} {{ pluralType }}<\/a>\n{%- else -%}\n<p>More: all the <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}?filter.p.product_type={{product.type | url_encode }}\" title=\"{{product.metafields.sort.theme}} \n{{ pluralType }}\">\n{{product.metafields.sort.theme}} {{ pluralType }}<\/a> \n{% endif %}\n and <a href=\"\/collections\/{{product.metafields.sort.theme | handleize}}\" title=\"{{product.metafields.sort.theme}} patches, stickers, t-shirts, prints, buttons, and more\">\n{{product.metafields.sort.theme}} items<\/a>, \nand all the {{shop.name}}<a href=\"\/collections\/{{ pluralType | handleize }}\" title=\"all {{shop.name}} {{ pluralType }}\">\n{{ pluralType }}<\/a>.\n{% endif %}\n<\/p>\n<\/ div>"
+          }
+        },
+        "4e82cfd7-2a43-41b4-8aaf-58ae7e86af73": {
+          "type": "text",
+          "settings": {
+            "text": "Credit card payments will require a shipping address, but it will only be used to verify the card. No shipping will be applied.",
+            "text_style": "uppercase"
+          }
+        },
+        "f45c9b78-bf9e-4bb1-960b-a5a113ec13b4": {
+          "type": "text",
+          "settings": {
+            "text": "Express payment options (buttons above for PayPal, Apple Pay, etc) will not require any billing info manual entry.",
+            "text_style": "uppercase"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "e69b8dbc-bb86-4d6e-80c2-95e73f5ab5de",
+        "variant_picker",
+        "868a39ce-c4bc-4234-9a0f-3fd9f5d9b09c",
+        "quantity_selector",
+        "ebecf611-6220-4427-87d4-5cf20e73256c",
+        "buy_buttons",
+        "description",
+        "6263b0aa-dac6-45ba-8e5d-54a93f2d4703",
+        "40aa5478-8b26-48ae-8744-2199a1e711af",
+        "4e82cfd7-2a43-41b4-8aaf-58ae7e86af73",
+        "f45c9b78-bf9e-4bb1-960b-a5a113ec13b4"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "More monster merch you might like…",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

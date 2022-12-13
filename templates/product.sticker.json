@@ -1,0 +1,186 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "ba8c666c-1c45-4e94-9d18-96e98342dfac": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 18,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "e831b3f5-c570-48df-bc7e-8d05d9854b6d": {
+          "type": "text",
+          "settings": {
+            "text": "Weatherproof, laminated vinyl indoor\/outdoor sticker — perfect for water bottles, cars, laptops! {{ product.metafields.dimensions.width | metafield_text }} W x {{ product.metafields.dimensions.length | metafield_text }} L",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "92e8babe-9558-492c-a95a-138a7f643cfe": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-restock' %}"
+          }
+        },
+        "bfe929af-eff5-4e3f-8757-27cc9d511ef8": {
+          "type": "shopify:\/\/apps\/back-in-stock-notifier\/blocks\/back_in_stock_notifier\/1fadf77e-ebd8-4e68-90cb-f24d97d07bde",
+          "settings": {
+            "show_bis_app_widget": true,
+            "notify_btn_text": "NOTIFY ME WHEN IN STOCK",
+            "notify_btn_backColor": "{{ shop.brand.colors.primary[0].background }}",
+            "notify_btn_textColor": "{{ shop.brand.colors.primary[0].foreground }}",
+            "notify_btn_borderColor": "#000000",
+            "notify_btn_border_radius": 2,
+            "notify_btn_border_size": 1,
+            "notify_btn_position_desktop": "other",
+            "notify_btn_position_mobile": "other"
+          }
+        },
+        "1329dd41-f7c7-4d8d-8928-ed3e20559cbc": {
+          "type": "text",
+          "settings": {
+            "text": "Buy 4 stickers, get 1 free with coupon code 4STICKERSGET1",
+            "text_style": "body"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "9abf0ab6-1f87-4ccd-adc9-94a5922b8b9f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sticker Details (click to expand)",
+            "content": "<p>• {{ product.metafields.dimensions.width | metafield_tag }} W x {{ product.metafields.dimensions.length | metafield_tag }} L<\/p><p>• weatherproof matte vinyl<\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "ff71506f-f0c8-42eb-b103-d7e3d2064493": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Is the sticker waterproof?",
+            "content": "<p>Monsterologist stickers are weatherproof, laminated vinyl indoor\/outdoor stickers — perfect for water bottles, cars, laptops!<\/p>",
+            "page": "",
+            "icon": "question_mark"
+          }
+        },
+        "59a0e847-be90-4677-b98f-75cbfa354c0e": {
+          "type": "text",
+          "settings": {
+            "text": "Note that stickers can be ordered in custom sizes for an additional cost. Contact us to set up a custom sticker order!",
+            "text_style": "uppercase"
+          }
+        },
+        "0aa091e0-82ff-4eb1-b334-c19af90dbd3b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'dynamic-links' -%}"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "7ba53801-c31f-4dd8-8371-70983e569aeb": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        },
+        "366527b4-2fc8-4678-895c-2eebb4ca3d6f": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'related-products' -%}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "ba8c666c-1c45-4e94-9d18-96e98342dfac",
+        "price",
+        "e831b3f5-c570-48df-bc7e-8d05d9854b6d",
+        "variant_picker",
+        "quantity_selector",
+        "92e8babe-9558-492c-a95a-138a7f643cfe",
+        "bfe929af-eff5-4e3f-8757-27cc9d511ef8",
+        "1329dd41-f7c7-4d8d-8928-ed3e20559cbc",
+        "buy_buttons",
+        "description",
+        "9abf0ab6-1f87-4ccd-adc9-94a5922b8b9f",
+        "ff71506f-f0c8-42eb-b103-d7e3d2064493",
+        "59a0e847-be90-4677-b98f-75cbfa354c0e",
+        "0aa091e0-82ff-4eb1-b334-c19af90dbd3b",
+        "share",
+        "7ba53801-c31f-4dd8-8371-70983e569aeb",
+        "366527b4-2fc8-4678-895c-2eebb4ca3d6f"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}
