@@ -1,0 +1,110 @@
+{%- comment -%}Pluralizing product types{%- endcomment -%}
+{% if product.type == "Patch" %}
+	{% capture pluralType %}{{ product.type | append: 'es' | downcase }}{% endcapture %}
+{% elsif product.type != "Patch" and product.type != "ID Card" %}
+	{% capture pluralType %}{{ product.type | append: 's' | downcase }}{% endcapture %}
+{% elsif product.type == "ID Card" %}
+	{% capture pluralType %}{{ product.type | append: 's' }}{% endcapture %}
+{% endif %}
+
+{%- comment -%}pluralizing for 'travel patches'{%- endcomment -%}
+{%- if product.type == "Patch" and product.metafields.sort.set == "Paranormal Places" -%}
+	{% capture productType %}{{ product.type | prepend: 'travel ' | append: 'es' | downcase }}{% endcapture %}
+	{%- elsif product.type == "Sticker" and product.metafields.sort.set == "Paranormal Places" -%}
+		{% capture productType %}{{ product.type | prepend: 'travel ' | append: 's' | downcase }}{% endcapture %}
+{%- else -%}
+{% assign productType = pluralType %}
+{% endif %}
+
+{%- comment -%}Dynamic links to optional merchandise sets{%- endcomment -%}
+<div>
+{%- if product.metafields.sort.set != blank -%}
+<p>
+Part of the <a href="/collections/{{product.metafields.sort.set | handleize}}" title="{{product.metafields.sort.set}} patches, stickers, t-shirts, prints, buttons, and more">
+{{product.metafields.sort.set}}</a> series.
+{% unless product.tags contains '_misc' %}
+{%- if product.tags contains '_main_collection' and product.metafields.sort.creature != blank -%}
+See more <a href="/collections/{{product.metafields.sort.set | handleize}}-{{ productType | handleize }}" title="{{product.metafields.sort.set}} {{ productType }}">
+{{product.metafields.sort.set}} {{ productType }}</a>.
+{%- else -%}
+See more <a href="/collections/{{product.metafields.sort.set | handleize}}?filter.p.product_type={{product.type | url_encode }}" title="{{product.metafields.sort.set}} {{ productType }}">
+{{product.metafields.sort.set}} {{ productType }}</a>.
+{%- endif -%}
+{% endunless %}
+</p>
+{%- endif -%}
+{%- comment -%}'creature' metafield dynamic links; if Product tag is '_main_collection', link to named Collection, otherwise use sorting filters{%- endcomment -%}
+<p>
+{%- if product.tags contains '_main_collection' and product.metafields.sort.creature != blank -%}
+{%- comment -%}'creature' metafield dynamic links; if Patch, Sticker, or T-Shirt, link to named Collection, otherwise use sorting filters{%- endcomment -%}
+{%- if product.type == "Patch" or product.type == "Sticker" or product.type == "T-Shirt" -%}
+Be sure to check out the other <a href="/collections/{{product.metafields.sort.creature | handleize}}-{{ pluralType }}" title="{{product.metafields.sort.creature}}
+{{ pluralType }}">
+{%- else -%}
+{%- comment -%}'creature' metafield dynamic links; fallback to Filtered Creature Collection page{%- endcomment -%}
+Be sure to check out the other <a href="/collections/{{product.metafields.sort.creature | handleize}}?filter.p.product_type={{product.type | url_encode }}" title="{{product.metafields.sort.creature}}
+{{ pluralType }}">
+{%- endif -%}
+{%- comment -%}if Product tag is NOT '_main_collection', link to named Collection, otherwise use sorting filters{%- endcomment -%}
+{{product.metafields.sort.creature}} {{ pluralType }}</a>, and all the <a href="/collections/{{product.metafields.sort.creature | handleize}}" title="{{product.metafields.sort.creature | handleize}} patches, stickers, t-shirts, prints, buttons, and more">
+{{product.metafields.sort.creature}} items</a>.
+{%- else -%}
+
+{%- comment -%} This isn't required (I think) because dynamic patch links go to metafieldTheme/product-typeTag links ("/cryptozoology/patch")
+{% if product.type == "Patch" %}
+	{% capture productType %}{{ product.type | prepend: 'embroidered-' | append: 'es' | downcase }}{% endcapture %}
+{% else %}
+{% assign productType = pluralType %}
+{%- endif -%}
+{%- endcomment -%}
+
+{%- comment -%}if tag is NOT '_main_collection', and Creature metafield is not blank, use generic 'All' Collection with filter to display Creature items; otherwise, do nothing. {%- endcomment -%}
+{%- if product.metafields.sort.creature != blank -%}
+{%- unless product.tags contains '_basic_creature_collection' -%}
+Check out all the other <a href="/collections/all?filter.p.m.sort.creature={{product.metafields.sort.creature | urlencode }}" title="{{product.metafields.sort.creature}} patches, stickers, t-shirts, prints, buttons, and more">
+{{product.metafields.sort.creature}} items</a>.
+{%- else -%}
+{%- comment -%}if tag IS '_basic_creature_collection'{%- endcomment -%}
+Check out all the other <a href="/collections/{{product.metafields.sort.creature | handleize }}" title="{{product.metafields.sort.creature}} patches, stickers, t-shirts, prints, buttons, and more">
+{{product.metafields.sort.creature}} items</a>.
+{%- endunless -%}
+{%- endif -%}
+</p>
+{%- endif -%}
+{%- comment -%}dynamic 'theme' metafield links; if 'theme' == 'creature' variations{%- endcomment -%}
+{%- if product.metafields.sort.theme != product.metafields.sort.creature -%}
+{%- comment -%} if product Type is Patch or Sticker. {%- endcomment -%}
+{%- if product.metafields.sort.theme != blank and product.type == "Patch" or product.type == "Sticker" -%}
+{%- comment -%} if Product tag is NOT _basic_collection, do this {%- endcomment -%}
+  {%- unless product.tags contains '_basic_collection' -%}
+<p>Plus: all the <a href="/collections/{{product.metafields.sort.theme | handleize}}-{{ pluralType }}" title="{{product.metafields.sort.theme}}
+{{ pluralType }}">{{product.metafields.sort.theme}} {{ pluralType }}</a>
+{%- else -%}
+{%- comment -%} if Product tag is _basic_collection, do this {%- endcomment -%}
+  <p>Plus: all the <a href="/collections/{{product.metafields.sort.theme | handleize}}?filter.p.product_type={{product.type | url_encode }}" title="{{product.metafields.sort.theme}}
+{{ pluralType }}">{{product.metafields.sort.theme}} {{ pluralType }}</a>
+{%- endunless -%}
+  {%- else -%}
+{%- comment -%} if Product tag is NOT _misc, do this {%- endcomment -%}
+{%- unless product.tags contains '_misc' -%}
+<p>Plus: all the <a href="/collections/{{product.metafields.sort.theme | handleize}}?filter.p.product_type={{product.type | url_encode }}" title="{{product.metafields.sort.theme}}
+{{ pluralType }}">
+{{product.metafields.sort.theme}} {{ pluralType }}</a>
+  {%- else -%}
+{%- comment -%} if Product tag IS _misc, do this {%- endcomment -%}
+  <p>Plus: all the <a href="/collections/miscellaneous?filter.p.m.sort.theme={{product.metafields.sort.theme | urlencode}}" title="miscellaneous {{product.metafields.sort.theme}}
+ items">miscellaneous {{product.metafields.sort.theme | handleize}} items</a>
+{%- endunless -%}
+  {% endif %}
+ and <a href="/collections/{{product.metafields.sort.theme | handleize}}" title="{{product.metafields.sort.theme}} patches, stickers, t-shirts, prints, buttons, and more">
+{{product.metafields.sort.theme}} items</a>,
+{%- comment -%} if Product tag is NOT _misc, do this {%- endcomment -%}
+{%- unless product.tags contains '_misc' %}
+and all the {{shop.name}} <a href="/collections/{{ pluralType | handleize }}" title="all {{shop.name}} {{ pluralType }}">{{ pluralType }}</a>.
+{%- else %}
+{%- comment -%} if Product tag IS _misc, do this {%- endcomment -%}
+and all the {{shop.name}} <a href="/collections/miscellaneous" title="all {{shop.name}} miscellaneous items">miscellaneous items</a>.
+{%- endunless -%}
+{% endif %}
+</p>
+</div>
