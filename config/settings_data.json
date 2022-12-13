@@ -6,10 +6,10 @@
     "colors_accent_2": "{{ shop.brand.colors.primary[0].background }}",
     "gradient_accent_2": "",
     "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_outline_button_labels": "{{ shop.brand.colors.primary[0].background }}",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
-    "colors_background_2": "#f3f3f3",
+    "colors_background_2": "{{ shop.brand.colors.primary[0].foreground }}",
     "gradient_background_2": "",
     "type_header_font": "montserrat_n7",
     "heading_scale": 100,
@@ -172,18 +172,19 @@
               "menu": "footer"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "ccc3b363-1542-4216-83cc-6a8b4a15b103": {
+            "type": "image",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "image": "shopify:\/\/shop_images\/Monsterologist-Shopify-banner-1400x850.png",
+              "image_width": 190,
+              "alignment": "center"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "ccc3b363-1542-4216-83cc-6a8b4a15b103"
         ],
         "settings": {
           "color_scheme": "background-1",

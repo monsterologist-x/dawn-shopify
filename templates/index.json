@@ -1,46 +1,46 @@
 {
   "sections": {
-    "multi_column": {
+    "multicolumn": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-patches-home-page-2.jpg",
-            "title": "Embroidered Patches",
-            "text": "<p><a href=\"\/collections\/embroidered-patches\" title=\"Embroidered Patches\">Cryptozoology, supernatural & paranormal embroidered patches<\/a> developed with the utmost of monster-focused care. All <a href=\"\/collections\/morale-patches\" title=\"Morale Patches\">morale patches<\/a> available with hook-and-loop. <\/p>",
-            "link_label": "Shop for patches!",
-            "link": "shopify:\/\/collections\/embroidered-patches"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "column2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-stickers-home-page-2.jpg",
-            "title": "Stickers",
-            "text": "<p>Durable and weatherproof <a href=\"\/collections\/stickers\" title=\"Stickers\">vinyl stickers featuring your favorite cryptozoology, Halloween and monster characters<\/a>.<\/p>",
-            "link_label": "Shop for stickers!",
-            "link": "shopify:\/\/collections\/stickers"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "column3": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-buttons-home-page-2.jpg",
-            "title": "Pin-Back Buttons",
-            "text": "<p><a href=\"\/collections\/buttons\" title=\"Buttons\">Monster, creature and cryptid buttons<\/a>. Featuring Bigfoot, Nessie, UFOs & aliens, Mothman, Halloween & Krampus.<\/p>",
-            "link_label": "Shop for pin-back buttons!",
-            "link": "shopify:\/\/collections\/buttons"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "50021aaf-358e-4fe0-83a5-627ab4fd6c5b": {
+        "47040734-778a-434d-9b33-1e0a0f82aec2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-prints-home-page-1280x1280.jpg",
-            "title": "Prints",
-            "text": "<p>High-quality art prints featuring your favorite cryptids, monsters, mysterious places, and some original creeps as well. <\/p>",
-            "link_label": "Shop for prints!",
-            "link": "shopify:\/\/collections\/prints"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -48,16 +48,16 @@
         "column1",
         "column2",
         "column3",
-        "50021aaf-358e-4fe0-83a5-627ab4fd6c5b"
+        "47040734-778a-434d-9b33-1e0a0f82aec2"
       ],
       "settings": {
         "title": "Cryptozoology, Paranormal & Monster  Patches, Stickers, Prints, Buttons & T-Shirts!",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "image_ratio": "square",
+        "columns_desktop": 4,
         "column_alignment": "center",
-        "background_style": "secondary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
@@ -70,13 +70,13 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best-Selling Patches, Buttons, Stickers, T-Shirts & Pins!",
+        "title": "Best-Selling Patches, Buttons, Stickers, Prints, T-Shirts & Pins!",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "best-sellers",
-        "products_to_show": 12,
+        "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -87,16 +87,51 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": true,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "6d55db40-b052-42c9-8110-d68b64bfefb6": {
+      "type": "newsletter",
+      "blocks": {
+        "template--16654345306342__6d55db40-b052-42c9-8110-d68b64bfefb6-1670918446294f6724-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to the newsletter!",
+            "heading_size": "h2"
+          }
+        },
+        "template--16654345306342__6d55db40-b052-42c9-8110-d68b64bfefb6-1670918446294f6724-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "template--16654345306342__6d55db40-b052-42c9-8110-d68b64bfefb6-1670918446294f6724-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16654345306342__6d55db40-b052-42c9-8110-d68b64bfefb6-1670918446294f6724-0",
+        "template--16654345306342__6d55db40-b052-42c9-8110-d68b64bfefb6-1670918446294f6724-1",
+        "template--16654345306342__6d55db40-b052-42c9-8110-d68b64bfefb6-1670918446294f6724-2"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "multicolumn",
-    "featured_collection"
+    "featured_collection",
+    "6d55db40-b052-42c9-8110-d68b64bfefb6"
   ]
 }
