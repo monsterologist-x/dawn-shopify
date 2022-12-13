@@ -72,36 +72,36 @@
           "disabled": true,
           "settings": {
             "heading": "Sizing & Specs",
+            "icon": "ruler",
             "content": "<p>• 100% cotton<br\/>• Pre-shrunk<br\/>• Shoulder-to-shoulder taping<\/p>",
-            "page": "t-shirt-size-chart",
-            "icon": "ruler"
+            "page": "t-shirt-size-chart"
           }
         },
         "91818ddb-cf06-4b68-b1ab-6b0e4813b5c4": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Garment Care",
+            "icon": "washing",
             "content": "<p>Print-on-demand t-shirts have <a href=\"https:\/\/monsterologist.myshopify.com\/pages\/t-shirt-wash-care-instructions?\">special garment care instructions<\/a> for washing and drying.<\/p>",
-            "page": "t-shirt-wash-care-instructions",
-            "icon": "washing"
+            "page": "t-shirt-wash-care-instructions"
           }
         },
         "1865bd0f-d4c6-4eaa-9243-fa3992a3a7bb": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Alternate Garment Styles",
+            "icon": "question_mark",
             "content": "<p>All t-shirt designs can also be ordered in Youth Fit sizes, Ladies Fit sizes, as well as on different shirt styles such as tank tops, 3\/4 t-shirts, long-sleeve t-shirts, and also sweatshirts & hoodies.<\/p><p>And if there's a design on my shop that's not currently a t-shirt, or it's not available in a size, color, or style you want, get in touch and I can set that up for you.<\/p><p>Please <a href=\"https:\/\/monsterologist.myshopify.com\/pages\/contact-me\">contact me to set up a custom apparel order<\/a>.<\/p>",
-            "page": "",
-            "icon": "question_mark"
+            "page": ""
           }
         },
         "eb861c6a-f570-4192-8d0f-3be500d31fb5": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Special T-Shirt Shipping Info",
+            "icon": "truck",
             "content": "<p>T-shirts are shipped separately from other items in your order, and therefore have a separate shipping charge. <br\/><br\/>T-shirts have a 3-7 business day production time. Shipping time is additional, and typically 3-5 business days.<\/p><p>T-shirts also have a <strong>flat rate shipping fee<\/strong> — one shipping fee no matter how many you order!<\/p>",
-            "page": "",
-            "icon": "truck"
+            "page": ""
           }
         },
         "dfa6b42b-111e-46b4-b983-43b7e3b60778": {
@@ -163,8 +163,6 @@
         "heading": "You may also like",
         "image_ratio": "adapt",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
         "show_vendor": false,
         "show_rating": true
       }

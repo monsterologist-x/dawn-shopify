@@ -58,7 +58,6 @@
         "bfe929af-eff5-4e3f-8757-27cc9d511ef8": {
           "type": "shopify:\/\/apps\/back-in-stock-notifier\/blocks\/back_in_stock_notifier\/1fadf77e-ebd8-4e68-90cb-f24d97d07bde",
           "settings": {
-            "show_bis_app_widget": true,
             "notify_btn_text": "NOTIFY ME WHEN IN STOCK",
             "notify_btn_backColor": "{{ shop.brand.colors.primary[0].background }}",
             "notify_btn_textColor": "{{ shop.brand.colors.primary[0].foreground }}",
@@ -91,18 +90,18 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Sticker Details (click to expand)",
+            "icon": "check_mark",
             "content": "<p>• {{ product.metafields.dimensions.width | metafield_tag }} W x {{ product.metafields.dimensions.length | metafield_tag }} L<\/p><p>• weatherproof matte vinyl<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "page": ""
           }
         },
         "ff71506f-f0c8-42eb-b103-d7e3d2064493": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Is the sticker waterproof?",
+            "icon": "question_mark",
             "content": "<p>Monsterologist stickers are weatherproof, laminated vinyl indoor\/outdoor stickers — perfect for water bottles, cars, laptops!<\/p>",
-            "page": "",
-            "icon": "question_mark"
+            "page": ""
           }
         },
         "59a0e847-be90-4677-b98f-75cbfa354c0e": {
@@ -172,8 +171,6 @@
         "heading": "You may also like",
         "image_ratio": "adapt",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
         "show_vendor": false,
         "show_rating": true
       }

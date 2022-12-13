@@ -126,8 +126,6 @@
         "heading": "More monster merch you might like…",
         "image_ratio": "square",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
         "show_vendor": false,
         "show_rating": false
       }

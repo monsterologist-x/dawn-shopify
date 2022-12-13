@@ -77,9 +77,9 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Special Print Shipping Info",
+            "icon": "truck",
             "content": "<p>Prints are shipped separately from other items in your order, and therefore have a separate shipping charge.<\/p><p>Prints also have a <strong>flat rate shipping fee<\/strong> — one shipping fee no matter how many you order!<\/p>",
-            "page": "",
-            "icon": "truck"
+            "page": ""
           }
         },
         "share": {
@@ -139,8 +139,6 @@
         "heading": "You may also like",
         "image_ratio": "square",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
         "show_vendor": false,
         "show_rating": true
       }

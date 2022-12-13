@@ -70,18 +70,18 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Alternate Mug Designs",
+            "icon": "question_mark",
             "content": "<p>If there's a design on my shop that's not currently a mug, please <a href=\"https:\/\/monsterologist.myshopify.com\/pages\/contact-me\">contact me<\/a> and I can set that up for you.<\/p>",
-            "page": "",
-            "icon": "question_mark"
+            "page": ""
           }
         },
         "eb861c6a-f570-4192-8d0f-3be500d31fb5": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Special Mug Shipping Info",
+            "icon": "truck",
             "content": "<p>Mugs are shipped separately from other items in your order, and therefore have a separate shipping charge.<\/p><p>Mugs also have a <strong>flat rate shipping fee<\/strong> — one shipping fee no matter how many you order!<\/p>",
-            "page": "",
-            "icon": "truck"
+            "page": ""
           }
         },
         "share": {
@@ -134,8 +134,6 @@
         "heading": "You may also like",
         "image_ratio": "square",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
         "show_vendor": false,
         "show_rating": true
       }
