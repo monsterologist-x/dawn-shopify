@@ -7,40 +7,40 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-patches-home-page-2.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+						"title": "Embroidered Patches",
+            "text": "<p><a href=\"\/collections\/embroidered-patches\" title=\"Embroidered Patches\">Cryptozoology, supernatural & paranormal embroidered patches<\/a> developed with the utmost of monster-focused care. All <a href=\"\/collections\/morale-patches\" title=\"Morale Patches\">morale patches<\/a> available with hook-and-loop. <\/p>",
+            "link_label": "Shop for patches!",
+            "link": "shopify:\/\/collections\/embroidered-patches"
           }
         },
         "column2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-stickers-home-page-2.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+						"title": "Stickers",
+            "text": "<p>Durable and weatherproof <a href=\"\/collections\/stickers\" title=\"Stickers\">vinyl stickers featuring your favorite cryptozoology, Halloween and monster characters<\/a>.<\/p>",
+            "link_label": "Shop for stickers!",
+            "link": "shopify:\/\/collections\/stickers"
           }
         },
         "column3": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-buttons-home-page-2.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+						"title": "Pin-Back Buttons",
+            "text": "<p><a href=\"\/collections\/buttons\" title=\"Buttons\">Monster, creature and cryptid buttons<\/a>. Featuring Bigfoot, Nessie, UFOs & aliens, Mothman, Halloween & Krampus.<\/p>",
+            "link_label": "Shop for pin-back buttons!",
+            "link": "shopify:\/\/collections\/buttons"
           }
         },
         "47040734-778a-434d-9b33-1e0a0f82aec2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/monsterologist-prints-home-page-1280x1280.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+						"title": "Prints",
+            "text": "<p>High-quality art prints featuring your favorite cryptids, monsters, mysterious places, and some original creeps as well. <\/p>",
+            "link_label": "Shop for prints!",
+            "link": "shopify:\/\/collections\/prints"
           }
         }
       },
