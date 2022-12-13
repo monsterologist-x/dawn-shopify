@@ -126,6 +126,7 @@
             "type": "announcement",
             "settings": {
               "text": "10% off studio item orders over $75! Use code 10OFF75 at checkout.",
+              "text_alignment": "center",
               "color_scheme": "inverse",
               "link": "shopify:\/\/pages\/promotions"
             }
@@ -168,7 +169,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "footer"
+              "menu": "footer-menu-2"
             }
           },
           "ccc3b363-1542-4216-83cc-6a8b4a15b103": {
