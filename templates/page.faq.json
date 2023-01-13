@@ -6,9 +6,111 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "6f1bd78a-5e9b-4ba9-8308-44298b6fc605": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your patches available for wholesale purchase?",
+            "icon": "question_mark",
+            "row_content": "<p>Yep! Please <a href=\"https:\/\/monsterologist.com\/pages\/wholesale\" title=\"Wholesale details for Monsterologist\">visit my <strong>Wholesale page<\/strong><\/a> for full details, or <a href=\"https:\/\/monsterologist.com\/pages\/contact-me\">contact me<\/a> directly. <\/p>",
+            "page": ""
+          }
+        },
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is \"hook & loop\" backing?",
+            "icon": "question_mark",
+            "row_content": "<p><strong>Hook-and-loop backing<\/strong> is a <strong>style of fastener<\/strong> (also known as \"hook-and-pile fasteners\" or \"touch fasteners\") that are made of two separate fabrics: one is a \"hook\" fabric, the other a \"loop\" fabric. <\/p><p>When brought together, they fasten to each other. <\/p><p><strong>\"Velcro\"<\/strong> is the trade name of one brand of hook-and-loop fastener. <\/p><p><strong>Patches have the \"hook\" side sewn on to the back of the patch<\/strong>, and can be fastened to any \"loop\" surface. <\/p><p>Many tactical backpacks, jackets and other apparel and accessories have \"loop\" panels sewn on to them. And of course one could have a \"loop\" panel sewn on to anything to accept \"hook\"-backed patches. <\/p><p>The upside to the hook-and-loop system is that patches can be swapped out on your accessory. <\/p>",
+            "page": ""
+          }
+        },
+        "b7c7b3c7-46a0-4592-b5d4-8ca290cb340f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you sell Velcro patches?",
+            "icon": "question_mark",
+            "row_content": "<p>\"Velcro\" is the brand name of one type of <a href=\"https:\/\/monsterologist.myshopify.com\/#hook-and-loop\">hook-and-loop<\/a> material. The hook-and-loop material on our patches is a generic hook-and-loop material that to our knowledge is compatible with all hook-and-loop type materials, including the \"Velcro\" brand.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I apply an iron-on patch?",
+            "icon": "question_mark",
+            "row_content": "<p>Check out the <a href=\"https:\/\/monsterologist.com\/pages\/iron-on-patch-instructions\" title=\"Embroidered patch iron-on process instructions.\">instructions on <strong>how to apply an iron-on embroidered patch<\/strong><\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I be notified when a certain item is back in stock?",
+            "icon": "question_mark",
+            "row_content": "<p>Please <a href=\"https:\/\/monsterologist.com\/pages\/contact-me\">contact me<\/a> using the contact form, and let me know which item or variation you are interested in. <\/p><p>I’ll email you with the estimated timeframe of the item is planned to be restocked, and will contact you again once the item is back in stock.<\/p>",
+            "page": ""
+          }
+        },
+        "b2842ed2-52be-4415-8f27-dbaa90c89a6d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is a morale patch?",
+            "icon": "question_mark",
+            "row_content": "<p>A morale patch is a military-style insignia\/badge\/emblem with a humorous image or expression. <\/p>",
+            "page": ""
+          }
+        },
+        "c8d7838e-1ce7-462f-b540-7a89ef9010c4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I hire you to create custom artwork or custom patches?",
+            "icon": "question_mark",
+            "row_content": "<p>At this time, I am not taking on custom artwork projects or custom patch manufacturing. <\/p>",
+            "page": ""
+          }
+        },
+        "3e5bfc00-ddf6-45cd-bee9-367fcbdbb5e3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will it take my order to ship?",
+            "icon": "question_mark",
+            "row_content": "<p>Typically orders are <strong>processed in 24-48 hours<\/strong>. In the U.S. <strong>shipping usually takes 1-3 days<\/strong>. International shipping can take anywhere from 1-8 weeks. See more details on the <a href=\"https:\/\/monsterologist.com\/policies\/shipping-policy\">Shipping<\/a> page.<\/p><p>T-shirts are custom print-on-demand items, and usually have a production time of 2-7 days with another 3-5 days for shipping.<\/p><p>Please visit <a href=\"https:\/\/monsterologist.com\/policies\/shipping-policy\">the main Shipping page<\/a> for current turnaround times for print-on-demand items due to virus shutdowns.  <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-1",
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-3",
+        "b7c7b3c7-46a0-4592-b5d4-8ca290cb340f",
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-2",
+        "template--16674886058214__6f1bd78a-5e9b-4ba9-8308-44298b6fc605-1673648797e94773fd-0",
+        "b2842ed2-52be-4415-8f27-dbaa90c89a6d",
+        "c8d7838e-1ce7-462f-b540-7a89ef9010c4",
+        "3e5bfc00-ddf6-45cd-bee9-367fcbdbb5e3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "6f1bd78a-5e9b-4ba9-8308-44298b6fc605"
   ]
 }
