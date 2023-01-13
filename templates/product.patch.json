@@ -122,6 +122,20 @@
           "settings": {
             "custom_liquid": "{%- render 'related-products' -%}"
           }
+        },
+        "7095833a-a36e-4368-90ca-765c0c1b9c44": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
         }
       },
       "block_order": [
@@ -141,7 +155,8 @@
         "f3634f90-c7cc-4f05-a6a3-202d0a8de36f",
         "share",
         "8fffa4f5-b8f0-4571-9e1c-29b348139ab7",
-        "ff606414-0d3b-4396-8498-b329ecfda3f3"
+        "ff606414-0d3b-4396-8498-b329ecfda3f3",
+        "7095833a-a36e-4368-90ca-765c0c1b9c44"
       ],
       "settings": {
         "enable_sticky_info": true,

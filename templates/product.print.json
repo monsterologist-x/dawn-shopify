@@ -52,7 +52,7 @@
         "1c3db841-1b3c-4622-b8aa-ce5a90beca47": {
           "type": "text",
           "settings": {
-            "text": "Some prints have a 2-5 business day production time. Shipping time is additional, and typically 3-5 business days.",
+            "text": "Oversized prints have a 2-5 business day production time. Shipping time is additional, and typically 3-5 business days.",
             "text_style": "body"
           }
         },
@@ -76,9 +76,9 @@
         "eb861c6a-f570-4192-8d0f-3be500d31fb5": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Special Print Shipping Info",
+            "heading": "18x24 and 24x36 Print Shipping Info",
             "icon": "truck",
-            "content": "<p>Prints are shipped separately from other items in your order, and therefore have a separate shipping charge.<\/p><p>Prints also have a <strong>flat rate shipping fee<\/strong> — one shipping fee no matter how many you order!<\/p>",
+            "content": "<p>18x24 and 24x26 prints are shipped separately from other items in your order, and therefore have a separate shipping charge.<\/p><p>These oversized prints also have a <strong>flat rate shipping fee<\/strong> — one shipping fee no matter how many you order! <\/p><p>All print sizes 11x17 and smaller will ship with other <a href=\"\/collections\/studio-items\" title=\"Studio Items\">Studio items<\/a> in your order for one combined rate. <\/p>",
             "page": ""
           }
         },
