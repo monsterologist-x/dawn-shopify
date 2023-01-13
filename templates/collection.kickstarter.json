@@ -2,10 +2,54 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "background-1"
+      }
+    },
+    "d3c5c485-3213-450b-904a-0b430117bb39": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16674791686374__d3c5c485-3213-450b-904a-0b430117bb39-167364468802d9cf02-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Thanks for backing!<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16674791686374__d3c5c485-3213-450b-904a-0b430117bb39-167364468802d9cf02-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your <strong>Kickstarter reward items and add-ons<\/strong> should be added to your <a href=\"\/cart\" title=\"\/cart\">Cart<\/a>, and a unique discount code has been added to offset the costs of those items (the discount will show up when you check out). <\/p><p>As a thank you for being a Kickstarter backer, enter the discount code <strong>20OFFK<\/strong> at checkout for <strong>20% off all <\/strong><a href=\"https:\/\/monsterologist.com\/collections\/studio-items\"><strong>Studio items<\/strong><\/a><strong> from the Monsterologist shop!<\/strong> Pick up individual travel patches and stickers from the original series, travel posters and prints, as well as buttons, enamel pins and more. <\/p><p>If you'd like to <strong>add more reward & add-on bundles<\/strong> from the campaign, just scroll down.<\/p><p>Head to <a href=\"https:\/\/monsterologist.com\/cart\/checkout\">Checkout<\/a> If you <strong>just want to complete your reward order<\/strong> without ordering additional items.<\/p>"
+          }
+        },
+        "template--16674791686374__d3c5c485-3213-450b-904a-0b430117bb39-167364468802d9cf02-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16674791686374__d3c5c485-3213-450b-904a-0b430117bb39-167364468802d9cf02-0",
+        "template--16674791686374__d3c5c485-3213-450b-904a-0b430117bb39-167364468802d9cf02-1",
+        "template--16674791686374__d3c5c485-3213-450b-904a-0b430117bb39-167364468802d9cf02-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product-grid": {
@@ -17,9 +61,224 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
         "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ae06e258-6207-4927-aebf-47cf26514f9a": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "paranormal-places-travel-poster-prints-11x17",
+        "products_to_show": 6,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bc7fc689-a8cc-401d-be9a-79784bbfb253": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "paranormal-places-travel-patches",
+        "products_to_show": 12,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "195c8114-a032-4b7d-8571-232f172f4b18": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "paranormal-places-travel-stickers",
+        "products_to_show": 12,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e7a2acc2-187c-4519-8301-3fb203ccc7b4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cryptid-command-patches",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c1770987-b285-4c51-8f0e-3237bc9b1334": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16674791686374__c1770987-b285-4c51-8f0e-3237bc9b1334-1673644611d689ff86-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bigfoot"
+          }
+        },
+        "template--16674791686374__c1770987-b285-4c51-8f0e-3237bc9b1334-1673644611d689ff86-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "halloween"
+          }
+        },
+        "template--16674791686374__c1770987-b285-4c51-8f0e-3237bc9b1334-1673644611d689ff86-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ghost"
+          }
+        },
+        "a123ee1c-24df-4dad-88f6-3d930159e828": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cthulhu"
+          }
+        },
+        "3ca19ac0-104c-4281-a667-70973f58a0ed": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ancient-astronauts-patches"
+          }
+        }
+      },
+      "block_order": [
+        "template--16674791686374__c1770987-b285-4c51-8f0e-3237bc9b1334-1673644611d689ff86-0",
+        "template--16674791686374__c1770987-b285-4c51-8f0e-3237bc9b1334-1673644611d689ff86-1",
+        "template--16674791686374__c1770987-b285-4c51-8f0e-3237bc9b1334-1673644611d689ff86-2",
+        "a123ee1c-24df-4dad-88f6-3d930159e828",
+        "3ca19ac0-104c-4281-a667-70973f58a0ed"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3eb24b5b-b2d5-41eb-b008-d2f40e9e040b": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16674791686374__3eb24b5b-b2d5-41eb-b008-d2f40e9e040b-167364461179136445-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where is my Kickstarter Reward Discount Code?",
+            "icon": "eye",
+            "row_content": "<p>Please note that all reward items should have an <strong>automatic discount code applied at Checkout<\/strong>, along with <strong>automatic free shipping<\/strong>. If you are not seeing your reward items discounted 100% after you click \"Checkout\", please get in touch at kickstarter[at]monsterologist.com<\/p>",
+            "page": ""
+          }
+        },
+        "template--16674791686374__3eb24b5b-b2d5-41eb-b008-d2f40e9e040b-167364461179136445-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Multiple Discount Codes at Checkout",
+            "icon": "eye",
+            "row_content": "<p>If you are adding items to your order and using the 20OFFK discount code, note that <strong>multiple discount codes can be applied to your checkout<\/strong>. Your unique reward discount code should be automatically applied when you go to the Checkout page, and you can add the 20OFFK code — in addition to the existing reward code — if you plan on adding more items to your Cart.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16674791686374__3eb24b5b-b2d5-41eb-b008-d2f40e9e040b-167364461179136445-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Discount Codes At Checkout, Not Cart",
+            "icon": "eye",
+            "row_content": "<p>Your discount codes will be applied at the Checkout stage, and will not be displayed in your Shopping Cart. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16674791686374__3eb24b5b-b2d5-41eb-b008-d2f40e9e040b-167364461179136445-0",
+        "template--16674791686374__3eb24b5b-b2d5-41eb-b008-d2f40e9e040b-167364461179136445-1",
+        "template--16674791686374__3eb24b5b-b2d5-41eb-b008-d2f40e9e040b-167364461179136445-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Kickstarter Reward FAQ",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -27,6 +286,13 @@
   },
   "order": [
     "banner",
-    "product-grid"
+    "d3c5c485-3213-450b-904a-0b430117bb39",
+    "product-grid",
+    "ae06e258-6207-4927-aebf-47cf26514f9a",
+    "bc7fc689-a8cc-401d-be9a-79784bbfb253",
+    "195c8114-a032-4b7d-8571-232f172f4b18",
+    "e7a2acc2-187c-4519-8301-3fb203ccc7b4",
+    "c1770987-b285-4c51-8f0e-3237bc9b1334",
+    "3eb24b5b-b2d5-41eb-b008-d2f40e9e040b"
   ]
 }
