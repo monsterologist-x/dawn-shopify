@@ -75,7 +75,7 @@
       "settings": {
         "title": "{{ section.settings.collection.title }}",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Also available in 4x6, 18x17 and 24x26 sizes. <\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "paranormal-places-travel-poster-prints-11x17",
@@ -220,7 +220,7 @@
         "3ca19ac0-104c-4281-a667-70973f58a0ed"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "Collections: Patches, Stickers, Pin-Back Buttons, Enamel Pins",
         "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 5,
@@ -274,8 +274,8 @@
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
+        "color_scheme": "background-2",
+        "container_color_scheme": "background-1",
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
