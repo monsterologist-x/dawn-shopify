@@ -1,0 +1,25 @@
+{% assign display_message = false %}
+{% for item in cart.items %}
+
+    {% if item.product.type == "Reward" %}
+
+        {% assign display_message = true %}
+
+    {% endif %}
+
+{% endfor %}
+
+{% if display_message %}
+<div style="margin: auto;padding: 20px;text-align: center;border-radius: 14px;border: 3px solid #812990;width: 75%;background-color: #fff100">
+  <h2> Kickstarter Backer Info</h2>
+  <p style="font-size: large;">Thanks for backing the Kickstarter campaign! Your reward items and add-ons should be added to your Cart (below), and a unique discount code added to offset the costs of those items (the discount will show up at the next step, when you Check Out). </p>
+  <hr style="max-width: 100% !important;margin: 0 auto;padding: 0px!important;" />
+  <p >As a thank you for being a Kickstarter backer</strong>, enter the discount code <strong>20OFFK</strong> at checkout for 20% off all <a href="/collections/studio-items">Studio items</a> from the Monsterologist shop! If you'd like to <a href="/collections/kickstarter-add-ons">add more reward & add-on bundles from the campaign, click here</a>.</p>
+  <hr style="max-width: 100% !important;margin: 0 auto;padding: 0px!important;" />
+  <p >If you <strong>just want to complete your reward order</strong> without ordering additional items, click the <a href="/cart/checkout">Checkout</a> button below.</p> 
+</div>
+<div style="font-size: small;font-style: italic;margin: auto;padding: 20px;text-align: center;border-radius: 14px;border: 0px solid #812990;width: 65%;background-color: #ffffff">
+    <p>Please note that all reward items should have an automatic discount code applied at Checkout, along with free shipping. If you are not seeing your reward items discounted 100% after you click "Checkout", please get in touch at kickstarter[at]monsterologist.com</p>
+    <p>If you are adding items to your order and using the 20OFFK discount code, note that multiple discount codes can be applied to your checkout. Your unique reward discount code should be automatically applied when you go to the Checkout page, and you can add the 20OFFK code if you plan on adding more items to your Cart. </p>
+</div>
+{% endif %}
