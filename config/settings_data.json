@@ -119,7 +119,7 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/Monsterlogist-logo-2020-square-circular-1280px.png",
     "currency_code_enabled": true,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "show_cart_note": true,
     "cart_drawer_collection": "best-sellers",
     "checkout_logo_image": "shopify:\/\/shop_images\/Monsterologist-Shopify-banner-1400x850.png",
