@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "colors_solid_button_labels": "{{ shop.brand.colors.primary[0].foreground }}",
@@ -105,24 +114,24 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "accent-2",
-    "social_twitter_link": "https:\/\/twitter.com\/monsterologist_",
-    "social_facebook_link": "https:\/\/facebook.com\/Monsterologist",
-    "social_pinterest_link": "https:\/\/pinterest.com\/monsterologist_\/",
-    "social_instagram_link": "https:\/\/instagram.com\/monsterologist_",
-    "social_tiktok_link": "https:\/\/tiktok.com\/@monsterologist",
+    "social_twitter_link": "https://twitter.com/monsterologist_",
+    "social_facebook_link": "https://facebook.com/Monsterologist",
+    "social_pinterest_link": "https://pinterest.com/monsterologist_/",
+    "social_instagram_link": "https://instagram.com/monsterologist_",
+    "social_tiktok_link": "https://tiktok.com/@monsterologist",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "https:\/\/www.youtube.com\/@monsterologist_",
+    "social_youtube_link": "https://www.youtube.com/@monsterologist_",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/Monsterlogist-logo-2020-square-circular-1280px.png",
+    "favicon": "shopify://shop_images/Monsterlogist-logo-2020-square-circular-1280px.png",
     "currency_code_enabled": true,
     "cart_type": "page",
     "show_cart_note": true,
     "cart_drawer_collection": "best-sellers",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Monsterologist-Shopify-banner-1400x850.png",
+    "checkout_logo_image": "shopify://shop_images/Monsterologist-Shopify-banner-1400x850.png",
     "checkout_logo_size": "large",
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_accent_color": "#80298f",
@@ -137,21 +146,20 @@
               "text": "10% off studio item orders over $75! Use code 10OFF75 at checkout.",
               "text_alignment": "center",
               "color_scheme": "inverse",
-              "link": "shopify:\/\/pages\/promotions"
+              "link": "shopify://pages/promotions"
             }
           }
         },
         "block_order": [
           "announcement-bar-0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
         "settings": {
           "color_scheme": "accent-2",
-          "logo": "shopify:\/\/shop_images\/Monsterologist-Shopify-banner-1400x850.png",
+          "logo": "shopify://shop_images/Monsterologist-Shopify-banner-1400x850.png",
           "logo_width": 200,
           "logo_position": "middle-left",
           "menu": "main-menu-compact",
@@ -178,13 +186,13 @@
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "footer-menu-2"
+              "menu": "footer-menu-info"
             }
           },
           "ccc3b363-1542-4216-83cc-6a8b4a15b103": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Monsterologist-Shopify-banner-1400x850.png",
+              "image": "shopify://shop_images/Monsterologist-Shopify-banner-1400x850.png",
               "image_width": 200,
               "alignment": "center"
             }
@@ -222,15 +230,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -341,10 +346,10 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "accent_icons": "accent-1",
-      "social_twitter_link": "https:\/\/twitter.com\/monsterologist_",
-      "social_facebook_link": "https:\/\/facebook.com\/Monsterologist",
-      "social_pinterest_link": "https:\/\/pinterest.com\/monsterologist_\/",
-      "social_instagram_link": "https:\/\/instagram.com\/monsterologist_",
+      "social_twitter_link": "https://twitter.com/monsterologist_",
+      "social_facebook_link": "https://facebook.com/Monsterologist",
+      "social_pinterest_link": "https://pinterest.com/monsterologist_/",
+      "social_instagram_link": "https://instagram.com/monsterologist_",
       "social_tiktok_link": "",
       "social_tumblr_link": "",
       "social_snapchat_link": "",
@@ -363,15 +368,14 @@
               "settings": {
                 "text": "10% off studio item orders over $75! Use code 10OFF75 at checkout.",
                 "color_scheme": "inverse",
-                "link": "shopify:\/\/pages\/promotions"
+                "link": "shopify://pages/promotions"
               }
             }
           },
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",
@@ -406,7 +410,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },
